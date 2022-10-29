@@ -1,6 +1,9 @@
+{% load static %}
+
 <html>
     <head>
         <title>New Collection</title>
+        <link rel="stylesheet" href="{% static 'new_collection.css' %}">
     </head>
     <body>
 
@@ -12,7 +15,7 @@
             <p>Yeah, copy in the JS file into the textbox and we'll do the rest</p>
         </legend>
         {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-        <textarea name="formdata"></textarea>
+        <textarea name="formdata" cols="128" rows="32" id="json-input"></textarea>
     </fieldset>
     <input type="submit" value="Vote">
     </form>

@@ -7,7 +7,7 @@
 def clean_json(s):
     import re
 
-    p = re.compile('((?<={)\s*\'|(?<=,)\s*\'|\'\s*(?=:)|(?<=:)\s*\'|\'\s*(?=,)|\'\s*(?=}))')
+    p = re.compile('((?<=\[)\s*\'|(?<={)\s*\'|(?<=,)\s*\'|\'\s*(?=:)|(?<=:)\s*\'|\'\s*(?=,)|\'\s*(?=})|\'\s*(?=]))')
     new_str = p.sub('\"', s)
     p1 = re.compile('//.*?\n')
     new_str = p1.sub('', new_str)
