@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .json_data_functions import clean_json
 
 # Create your views here.
 
@@ -14,5 +15,5 @@ def collection(request):
     elif(request.method == 'POST'):
         form_data = request.POST['formdata']
         return render(request, 'new_collection.html', {
-            'form_data': form_data,
+            'form_data': clean_json(form_data),
         })
