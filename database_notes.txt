@@ -1,0 +1,29 @@
+Things that will change in the data files:
+
+status changes
+pp_history object (progress payment)
+
+SW-17 bid item number
+
+PP04: progress payment 4
+
+submittals object changes
+
+Acronomys:
+LT laterals MN mains CL culvert
+
+laterals have id_b but other ones don't, it's just ""
+
+
+Drawings: file
+TCP traffic control plan: gets PDF
+popup_tcp_entry_creator is called
+
+ppab progress payment as built
+
+pp_as_builts/ab_list.js: make that another table model
+
+Flatwork polygons: add more entries using GIS
+
+Submittals, status, payment updates are sometimes changed
+

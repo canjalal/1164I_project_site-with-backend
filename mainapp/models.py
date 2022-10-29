@@ -1,5 +1,6 @@
 from django.db import models
-from django.contrib.postgres.fields import JSONField, ArrayField
+from django.contrib.postgres.fields import JSONField
+from django_jsonform.models.fields import ArrayField
 # Create your models here.
 
 class FeatureCollection(models.Model):

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>New Collection</title>
+    </head>
+    <body>
+
+
+<form action="{% url 'mainapp:new_collection' %}" method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend>        <h1>Add a new Feature Collection</h1>
+            <p>Yeah, copy in the JS file into the textbox and we'll do the rest</p>
+        </legend>
+        {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+        <textarea name="formdata"></textarea>
+    </fieldset>
+    <input type="submit" value="Vote">
+    </form>
+    <div>
+        {{ form_data }}
+    </div>
+    </body>
+</html>
