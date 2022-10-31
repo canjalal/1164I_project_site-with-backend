@@ -4,29 +4,30 @@ var overlay_menu_subsection_content_R = "";
 var overlay_menu_subsection_content_RAG = "";
 var overlay_menu_subsection_content_CR = "";
 
+
 for (var ii = 0; ii < layer_filter('PLAN_BOUNDARY_U', json_1164I_010_PRJCT_DWGS_64)['features'].length; ii++) {
-  overlay_menu_subsection_content_U += layer_filter('PLAN_BOUNDARY_U',
-  json_1164I_010_PRJCT_DWGS_64)['features'][ii].properties.SHEET + '<br>';
+  overlay_menu_subsection_content_U += popup_sheet_entry_creator(layer_filter('PLAN_BOUNDARY_U',
+  json_1164I_010_PRJCT_DWGS_64)['features'][ii].properties.SHEET) + '<br>';
 }
 
 for (var ii = 0; ii < layer_filter('PLAN_BOUNDARY_SW', json_1164I_010_PRJCT_DWGS_64)['features'].length; ii++) {
-  overlay_menu_subsection_content_SW += layer_filter('PLAN_BOUNDARY_SW',
-  json_1164I_010_PRJCT_DWGS_64)['features'][ii].properties.SHEET + '<br>';
+  overlay_menu_subsection_content_SW += popup_sheet_entry_creator(layer_filter('PLAN_BOUNDARY_SW',
+  json_1164I_010_PRJCT_DWGS_64)['features'][ii].properties.SHEET) + '<br>';
 }
 
 for (var ii = 0; ii < layer_filter('PLAN_BOUNDARY_R', json_1164I_010_PRJCT_DWGS_64)['features'].length; ii++) {
-  overlay_menu_subsection_content_R += layer_filter('PLAN_BOUNDARY_R',
-  json_1164I_010_PRJCT_DWGS_64)['features'][ii].properties.SHEET + '<br>';
+  overlay_menu_subsection_content_R += popup_sheet_entry_creator(layer_filter('PLAN_BOUNDARY_R',
+  json_1164I_010_PRJCT_DWGS_64)['features'][ii].properties.SHEET) + '<br>';
 }
 
 for (var ii = 0; ii < layer_filter('PLAN_BOUNDARY_RAG', json_1164I_010_PRJCT_DWGS_64)['features'].length; ii++) {
-  overlay_menu_subsection_content_RAG += layer_filter('PLAN_BOUNDARY_RAG',
-  json_1164I_010_PRJCT_DWGS_64)['features'][ii].properties.SHEET + '<br>';
+  overlay_menu_subsection_content_RAG += popup_sheet_entry_creator(layer_filter('PLAN_BOUNDARY_RAG',
+  json_1164I_010_PRJCT_DWGS_64)['features'][ii].properties.SHEET) + '<br>';
 }
 
 for (var ii = 0; ii < layer_filter('PLAN_BOUNDARY_CR', json_1164I_010_PRJCT_DWGS_64)['features'].length; ii++) {
-  overlay_menu_subsection_content_CR += layer_filter('PLAN_BOUNDARY_CR',
-  json_1164I_010_PRJCT_DWGS_64)['features'][ii].properties.SHEET + '<br>';
+  overlay_menu_subsection_content_CR += popup_sheet_entry_creator(layer_filter('PLAN_BOUNDARY_CR',
+  json_1164I_010_PRJCT_DWGS_64)['features'][ii].properties.SHEET) + '<br>';
 }
 
 var menu_card_sheet_overlay_content =

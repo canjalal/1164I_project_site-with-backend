@@ -12,7 +12,7 @@ function return_plan_boundary_popup(feature) {
                                 </h2>\
                                 </div>\
                                 <div id="PLAN_collapse_01" class="collapse" aria-labelledby="PLAN_sheet" data-parent="#PLAN_popup">\
-                                <div class="card-body">' + (feature.properties['SHEET'] !== null ? Autolinker.link(feature.properties['SHEET'].toLocaleString()) : '') + '</div>\
+                                <div class="card-body">' + (feature.properties['SHEET'] !== null ? Autolinker.link(popup_sheet_entry_creator(feature.properties['SHEET']).toLocaleString()) : '') + '</div>\
                                 </div>\
                                 </div>\
 \
