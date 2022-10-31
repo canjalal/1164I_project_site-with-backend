@@ -180,6 +180,7 @@ function popup_spec_entry_creator(popup_args = null)
 function popup_AB_entry_creator(ab_arg)
 
 {
+    if(ab_arg === "none") return ab_arg;
 
     var arg_length = ab_arg.split("-")[0].length;
   
@@ -220,6 +221,7 @@ function popup_AB_entry_creator(ab_arg)
 function popup_tcp_entry_creator(tcp_arg = null)
 
 {
+    if(tcp_arg === "none") return tcp_arg;
 
     var output_string = '';
 

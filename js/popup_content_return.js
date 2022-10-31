@@ -23,7 +23,7 @@ function return_plan_boundary_popup(feature) {
                                 </h2>\
                                 </div>\
                                 <div id="PLAN_collapse_02" class="collapse" aria-labelledby="PLAN_AB" data-parent="#PLAN_popup">\
-                                <div class="card-body">' + (feature.properties['AS_BUILT'] !== null ? Autolinker.link(feature.properties['AS_BUILT'].toLocaleString()) : '') + '</div>\
+                                <div class="card-body">' + (feature.properties['AS_BUILT'] !== null ? Autolinker.link(popup_AB_entry_creator(feature.properties['AS_BUILT']).toLocaleString()) : '') + '</div>\
                                 </div>\
                                 </div>\
 \
@@ -34,7 +34,7 @@ function return_plan_boundary_popup(feature) {
                                 </h2>\
                                 </div>\
                                 <div id="PLAN_collapse_03" class="collapse" aria-labelledby="PLAN_TCP" data-parent="#PLAN_popup">\
-                                <div class="card-body">' + (feature.properties['TCP'] !== null ? Autolinker.link(feature.properties['TCP'].toLocaleString()) : '') + '</div>\
+                                <div class="card-body">' + (feature.properties['TCP'] !== null ? Autolinker.link(popup_tcp_entry_creator(feature.properties['TCP']).toLocaleString()) : '') + '</div>\
                                 </div>\
                                 </div>\
 \
@@ -45,7 +45,7 @@ function return_plan_boundary_popup(feature) {
                                 </h2>\
                                 </div>\
                                 <div id="PLAN_collapse_04" class="collapse" aria-labelledby="PLAN_relevant" data-parent="#PLAN_popup">\
-                                <div class="card-body">' + (feature.properties['RLVNT'] !== null ? Autolinker.link(feature.properties['RLVNT'].toLocaleString()) : '') + '</div>\
+                                <div class="card-body">' + (feature.properties['RLVNT'] !== null ? Autolinker.link(popup_sheet_entry_creator(feature.properties['RLVNT']).toLocaleString()) : '') + '</div>\
                                 </div>\
                                 </div>\
 \
@@ -56,7 +56,7 @@ function return_plan_boundary_popup(feature) {
                                 </h2>\
                                 </div>\
                                 <div id="PLAN_collapse_05" class="collapse" aria-labelledby="PLAN_spec" data-parent="#PLAN_popup">\
-                                <div class="card-body">' + (feature.properties['SPEC'] !== null ? Autolinker.link(feature.properties['SPEC'].toLocaleString()) : '') + '</div>\
+                                <div class="card-body">' + (feature.properties['SPEC'] !== null ? Autolinker.link(popup_spec_entry_creator(feature.properties['SPEC']).toLocaleString()) : '') + '</div>\
                                 </div>\
                                 </div>\
 \
