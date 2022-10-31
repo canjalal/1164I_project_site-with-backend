@@ -190,8 +190,9 @@ function popup_AB_entry_creator(ab_arg)
     for (var ii = 0; ii < json_ab_list[ab_arg.substring(0, arg_length)].length; ii += 1)
 
     {
+        let fileName = json_ab_list[ab_arg.substring(0, arg_length)][ii];
 
-        if (json_ab_list[ab_arg.substring(0, arg_length)][ii].includes(ab_arg))
+        if (fileName.includes(ab_arg))
 
         {
 
@@ -202,8 +203,8 @@ function popup_AB_entry_creator(ab_arg)
                 output_string = output_string.concat("<br>");
             }
 
-            output_string += "<a href=\".\\pp_as_builts\\".concat(json_ab_list[ab_arg.substring(0, arg_length)][ii],
-                ".pdf\" target=\"_blank\">", (json_ab_list[ab_arg.substring(0, arg_length)][ii].replace('1164I_', '')).replace(/_/g, ' ').replace('-0', '-'), "<\/a>");
+            output_string += "<a href=\".\\pp_as_builts\\".concat(fileName,
+                ".pdf\" target=\"_blank\">", (fileName.replace('1164I_', '')).replace(/_/g, ' ').replace('-0', '-'), "<\/a>");
 
             jj += 1;
 
