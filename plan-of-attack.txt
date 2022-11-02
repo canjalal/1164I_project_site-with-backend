@@ -1,0 +1,12 @@
+So here's a plan:
+
+Finish models
+
+Finish view that allows you to import a FeatureCollection and its accompanying features
+
+Hold off on the drawings features. Stick to features (sewers and flatwork)
+It should also be able to import lists. In the future, there should be no need for the complicated naming system, because AWS could store the PDFs. Each spec would have an associated PDF
+
+It will come in and turn into a dict
+
+The dict's features will be parsed and instances of features will be created
